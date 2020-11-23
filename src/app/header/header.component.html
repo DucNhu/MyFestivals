@@ -1,0 +1,97 @@
+<header>
+    <div class="container-fluid header-box">
+        <!--icon web  -->
+        <div class="logo">
+            <a routerLink="home" class="header__logo">
+                <span *ngFor="let char of logo" class="logo_char-{{char}}">{{char}}</span>
+            </a>
+        </div>
+        <!-- Menu-mobile -->
+        <div class="bars-box">
+            <button class="button">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- Menu -->
+        <ul class="header__list-menu none">
+            <li class="menu__items" (click)="clickTabOn('Home')" [class.active]="activeTab == 'Home'">
+                <a routerLink="home" class="item">Home page</a>
+            </li>
+
+            <li class="menu__items">Theme
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                <div class="box__sub__menu w-100 Box-Theme">
+                    <div class="box__sub--img">
+                        <img src="./../../assets/Images/Eve.jpg" alt="Img-des">
+                    </div>
+
+                    <div class="box-list-fes p-2">
+                        <!-- Outside -->
+                        <div class="box-outside">
+                            <h2>Out Side</h2>
+                            <ul class="sub-menu">
+                                <li *ngFor="let nameFes of sub_menu.OutSide">
+                                    <a routerLink="{{nameFes.link}}">
+                                        {{nameFes.NameFes}}
+                                        <span class="fas fa-angle-down" *ngIf="nameFes.sub__menu__box"></span>
+                                    </a>
+                                    <ul class="sub-menu__menu fas" *ngIf="nameFes.sub__menu__box">
+                                        <li *ngFor="let NameFeslv2 of nameFes.sub__menu__itemlv2">
+                                            <a routerLink="{{NameFeslv2.link}}">
+                                                {{NameFeslv2.NameFes}}
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- In Home -->
+                        <div class="box-inHome">
+                            <h2>In Home</h2>
+                            <ul class="sub-menu">
+                                <li *ngFor="let nameFes of sub_menu.InHome">
+                                    <a routerLink="{{nameFes.link}}">
+                                        {{nameFes.NameFes}}
+                                        <span class="fas fa-angle-down" *ngIf="nameFes.sub__menu__box"></span>
+                                    </a>
+                                    <ul class="sub-menu__menu fas" *ngIf="nameFes.sub__menu__box">
+                                        <li *ngFor="let NameFeslv2 of nameFes.sub__menu__itemlv2">
+                                            <a routerLink="{{NameFeslv2.link}}">
+                                                {{NameFeslv2.NameFes}}
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </li>
+
+            <li class="menu__items" (click)="clickTabOn('Book')" [class.active]="activeTab == 'Book'">
+                <a href="Home_Buy_Books.html" class="item">Book</a></li>
+
+            <li class="menu__items" (click)="clickTabOn('About')" [class.active]="activeTab == 'About'">
+                <a href="about.html" class="item">About</a>
+            </li>
+
+            <li class="menu__items position-relative" (click)="clickTabOn('Accout')" [class.active]="activeTab == 'Accout'">Accout
+                <i class="fas fa-angle-down"></i>
+                <div class="box__sub__menu box__acc">
+                    <ul class="p-2">
+                        <li>
+                            <a href="Login.html">LogIn</a>
+                            <i class="fas fa-sign-in-alt ml-2"></i>
+                        </li>
+                        <li class="mt-2"><a href="signup.html">SignUp</a>
+                            <i class="fas fa-user-plus ml-2"></i>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>

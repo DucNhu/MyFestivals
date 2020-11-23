@@ -1,0 +1,24 @@
+<!--FESTIVALS -->
+<h1 class="fes-title star-dow position-relative">
+     {{title}} 
+</h1>
+
+<div class="row">
+    <article class="col-md-3" *ngFor="let fes of mostFestivals">
+        <a routerLink="{{fes.link}}">
+            <div class="frame_img">
+                <img src="{{fes.image}}" />
+            </div>
+            <ul class="box__intro">
+                <!-- Name fes -->
+                <li class="box__intro--name">
+                    <h5>{{fes.name}}</h5>          
+                </li>
+                <!-- address fes -->
+                <li class="box__intro--add">{{fes.add}}</li>
+                <!-- Time -->
+                <li class="box__intro--time">{{fes.timeFirst}} ~ {{fes.timeLast}}</li>
+            </ul>
+        </a>
+    </article>
+</div>

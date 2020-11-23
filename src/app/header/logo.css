@@ -1,0 +1,45 @@
+.logo {
+  display: flex;
+  align-items: center;
+  min-width: 100px;
+  align-self: flex-start;
+}
+.header__logo {
+  margin-top: -10px;
+  font-size: 25px;
+  letter-spacing: -3px;
+  color: white;
+}
+.header__logo:hover span {
+  color: white;
+}
+
+.header__logo {
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+.header__logo .logo_char-F {
+  text-shadow: 0px 0px 1px #3c3ceb, 0px 0px 5px #3c3ceb;
+}
+.header__logo .logo_char-e {
+  text-shadow: 0px 0px 1px hsl(192, 89%, 64%), 0px 0px 5px hsl(192, 89%, 64%);
+}
+.header__logo .logo_char-s {
+  text-shadow: 0px 0px 1px hsl(310, 77%, 59%), 0px 0px 5px hsl(310, 77%, 59%);
+}
+.header__logo .logo_char-t {
+  text-shadow: 0px 0px 1px hsl(0, 77%, 54%), 0px 0px 5px hsl(0, 77%, 54%);
+}
+.header__logo .logo_char-i {
+  text-shadow: 0px 0px 1px hsl(0, 77%, 54%), 0px 0px 5px hsl(0, 77%, 54%);
+}
+.header__logo .logo_char-v {
+  text-shadow: 0px 0px 1px rgb(97, 148, 4), 0px 0px 5px rgb(97, 148, 4);
+}
+.header__logo .logo_char-a {
+  text-shadow: 0px 0px 1px rgb(10, 241, 164), 0px 0px 5px rgb(10, 241, 164);
+}
+.header__logo .logo_char-l {
+  text-shadow: 0px 0px 1px hsl(143, 75%, 51%), 0px 0px 5px hsl(143, 75%, 51%);
+}

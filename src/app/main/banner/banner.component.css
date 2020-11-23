@@ -1,0 +1,20 @@
+.box__banner {
+  height: 80vh;
+
+  filter: sepia(1);
+  text-align: center;
+}
+
+/* .banner-link {
+  position: absolute;
+  top: 50%;
+
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.banner-link:hover {
+  opacity: 0.8;
+} */

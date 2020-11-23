@@ -1,0 +1,8 @@
+<div class="navigation__box position-sticky">
+    <div class="nav--item" *ngFor="let fes of navigation">
+        <a routerLink="{{fes.link}}" [class.active]="active == fes.name" (click)="ClickActive(fes.name)" >
+            <i class="fas fa-fire-alt"></i>
+            {{fes.name}}
+        </a>
+    </div>
+</div>
